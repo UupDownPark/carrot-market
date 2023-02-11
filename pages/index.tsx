@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             +
           </button>
         </div>
-        <div className="bg-white w-96 p-6">
+        <div className="bg-white w-96 p-6 h-[100%]">
           <button className="border-black border-2 rounded-full h-12 w-12">
             X
           </button>
