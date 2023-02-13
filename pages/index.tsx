@@ -53,7 +53,7 @@ const Home: NextPage = () => {
             <div className="border-black border-2 rounded-xl h-24 w-24">1</div>
             <div className="border-black border-2 rounded-xl h-24 w-24">1</div>
           </div>
-          <button className="rounded-xl bg-purple-400">let get it done</button>
+          <button className="rounded-xl bg-purple-400 ">let get it done</button>
         </div>
         <div className="bg-yellow-500 flex flex-col p-3 space-y-5">
           <div className="flex my-5">
