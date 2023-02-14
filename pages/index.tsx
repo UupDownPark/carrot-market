@@ -41,19 +41,21 @@ const Home: NextPage = () => {
             +
           </button>
         </div>
-        <div className="bg-white w-96 p-6 h-[100%]">
+        <div className="bg-white w-96 p-6 h-[100%] justify-between ">
           <button className="border-black border-2 rounded-full h-12 w-12">
             X
           </button>
-          <div className="text-xs">simple tag</div>
-          <div className="text-2xl">work with best designer</div>
+          <div className="text-xs my-8">simple tag</div>
+          <div className="text-2xl my-10">work with best designer</div>
           <div className="grid grid-cols-2 gap-5">
             <div className="border-black border-2  rounded-xl h-24 w-24">1</div>
             <div className="border-black border-2 rounded-xl h-24 w-24">1</div>
             <div className="border-black border-2 rounded-xl h-24 w-24">1</div>
             <div className="border-black border-2 rounded-xl h-24 w-24">1</div>
           </div>
-          <button className="rounded-xl bg-purple-400 ">let get it done</button>
+          <button className="rounded-xl bg-purple-400 mt-[200px]">
+            let get it done
+          </button>
         </div>
         <div className="bg-yellow-500 flex flex-col p-3 space-y-5">
           <div className="flex my-5">
