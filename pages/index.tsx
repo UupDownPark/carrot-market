@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
-    <div className="bg-pink-200 min-h-screen py-20 px-10 grid gap-10">
+    <div className="bg-pink-200 min-h-screen py-15 px-10 grid gap-10">
       <div className="flex justify-center items-center gap-36">
         <div className="bg-white p-6 w-96">
           <div className="my-5 ml-1 font-3xl">Weather</div>
