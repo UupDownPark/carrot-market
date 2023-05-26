@@ -2,19 +2,24 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="flex flex-col space-y-5 py-10">
       {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
-        <div key={i}>
-          <div>
-            <div />
-            <div>
-              <h3>New iPhone 14</h3>
-              <span>Black</span>
-              <span>$95</span>
+        <div
+          className="flex border-b px-4 justify-between pb-4 cursor-pointer"
+          key={i}
+        >
+          <div className="flex space-x-5">
+            <div className="h-20 w-20 bg-gray-500 rounded-md" />
+            <div className="flex flex-col">
+              <h3 className="font-medium text-sm text-gray-900">
+                New iPhone 14
+              </h3>
+              <span className="text-xs text-gray-400">Black</span>
+              <span className="font-medium mt-1 text-gray-900">$95</span>
             </div>
           </div>
-          <div>
-            <div>
+          <div className="flex justify-end items-end space-x-1">
+            <div className="flex text-sm items-center text-gray-600">
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -31,7 +36,7 @@ const Home: NextPage = () => {
               </svg>
               <span>1</span>
             </div>
-            <div>
+            <div className="flex text-sm items-center text-gray-600">
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -51,7 +56,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       ))}
-      <button>
+      <button className="fixed bottom-24 right-5 bg-orange-400 transition-colors hover:bg-orange-500 rounded-full p-4 text-white shadow-xl">
         <svg
           className="h-6 w-6"
           xmlns="http://www.w3.org/2000/svg"
