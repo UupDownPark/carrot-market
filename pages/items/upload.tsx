@@ -48,11 +48,15 @@ const Upload: NextPage = () => {
         </div>
       </div>
       <div>
-        <label className=" mb-1 block text-gray-500 font-medium text-sm ">
+        <label
+          htmlFor="description"
+          className=" mb-1 block text-gray-500 font-medium text-sm "
+        >
           Description
         </label>
 
         <textarea
+          id="description"
           className="mt-1 w-full border border-gray-300 appearance-none rounded-md shadow-sm focus:outline-none placeholder-gray-500 focus:ring-orange-500 focus:border-orange-500"
           rows={4}
         />
