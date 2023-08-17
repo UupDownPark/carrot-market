@@ -27,7 +27,7 @@ const Upload: NextPage = () => {
       </div>
       <div className="my-5">
         <label
-          htmlFor="price"
+          htmlFor="price" //htmlFor id가 price인 곳에 커서가 간다
           className=" mb-1 block text-gray-500 font-medium text-sm "
         >
           Price
