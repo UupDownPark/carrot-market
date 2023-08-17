@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
-
+import { useRouter } from "next/router";
 const Home: NextPage = () => {
+  const router = useRouter();
   return (
     <div className="flex flex-col space-y-5 py-10">
       {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
         <div
+          onClick={() => router.push(`/items/${i + 1}`)}
           className="flex border-b px-4 justify-between pb-4 cursor-pointer"
           key={i}
         >
@@ -56,7 +58,10 @@ const Home: NextPage = () => {
           </div>
         </div>
       ))}
-      <button className="fixed bottom-24 right-5 bg-orange-400 transition-colors hover:bg-orange-500 rounded-full p-4 text-white shadow-xl">
+      <button
+        onClick={() => router.push("/items/upload")}
+        className="fixed bottom-24 right-5 bg-orange-400 transition-colors hover:bg-orange-500 rounded-full p-4 text-white shadow-xl"
+      >
         <svg
           className="h-6 w-6"
           xmlns="http://www.w3.org/2000/svg"
