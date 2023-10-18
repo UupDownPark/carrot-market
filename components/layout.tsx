@@ -6,7 +6,7 @@ interface LayoutProps {
   title?: string;
   canGoBack?: boolean;
   hasTabBar?: boolean;
-  children: React.ReactNode;
+  children: React.ReactNode; //형식정의가 있는것은 이름을 바꾸면 안됌
 }
 export default function Layout({
   title,
@@ -18,6 +18,7 @@ export default function Layout({
   const onClick = () => {
     router.back();
   };
+
   return (
     <div>
       <div className="bg-white w-full h-12 max-w-xl justify-center text-lg px-10 font-medium  fixed text-gray-800 border-b top-0  flex items-center">
