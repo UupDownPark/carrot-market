@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <div className="w-full max-w-xl mx-auto">
       <Component {...pageProps} />
     </div>
+    //commit test
   );
 }
 
